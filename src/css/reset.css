@@ -1,0 +1,15 @@
+/* RESET */
+html {
+    font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  box-sizing: border-box;
+}
+  

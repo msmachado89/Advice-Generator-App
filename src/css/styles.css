@@ -1,0 +1,77 @@
+/* VARIABLES */
+
+:root {
+  --bg-clr: rgb(31, 38, 50);
+  --card-clr: rgb(50, 58, 73);
+  --font-clr: rgb(206, 227, 233);
+  --detail-clr: rgb(82, 255, 168);
+  --other-clr: rgb(50, 58, 73);
+}
+
+/* STYLES */
+
+html {
+  background-color: var(--bg-clr);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-clr);
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 20px;
+
+  border-radius: 15px;
+  gap: 30px;
+}
+
+#advice-id {
+  color: var(--detail-clr);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  /* margin-bottom: 20px; */
+}
+
+#advice-content {
+  color: var(--font-clr);
+  text-align: center;
+}
+
+#btn {
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--detail-clr);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  bottom: 0;
+  transform: translateY(50%);
+  transition: box-shadow 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#btn:hover {
+  box-shadow: 0 0 30px rgba(82, 255, 168, 0.6);
+}
+
+/* RESPONSIVITY */
+
+@media (max-width: 375px) {
+  .card {
+    padding-inline: 20px;
+  } 
+}
